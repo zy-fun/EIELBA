@@ -8,6 +8,7 @@ After downloading, the image can be loaded using the following command:
 
 ```bash
 docker load -i dinvg_x86_64.tar.gz
+```
 
 ## Installation
 
