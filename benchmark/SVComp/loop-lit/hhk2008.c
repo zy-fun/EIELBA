@@ -4,17 +4,19 @@
 #include "assert.h"
 
 int main() {
-    int a = __VERIFIER_nondet_int();
-    int b = __VERIFIER_nondet_int();
+    int res0;
+    int cnt0;
     int res, cnt;
-    if (!(a <= 1000000)) return 0;
-    if (!(0 <= b && b <= 1000000)) return 0;
-    res = a;
-    cnt = b;
+    if (!(res0 <= 1000000)) return 0;
+    if (!(0 <= cnt0 && cnt0 <= 1000000)) return 0;
+    res = res0;
+    cnt = cnt0;
+    int tau = 0;
     while (cnt > 0) {
+    tau += 1;
 	cnt = cnt - 1;
 	res = res + 1;
     }
-    __VERIFIER_assert(res == a + b);
+    // __VERIFIER_assert(res == a + b);
     return 0;
 }

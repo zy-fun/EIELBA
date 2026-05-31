@@ -3,11 +3,14 @@
 
 #include "assert.h"
 int main() {
+    int x0, y0;
     int x,y;
-    x = -50;
-    y = __VERIFIER_nondet_int();
-    if (!(-1000 < y && y < LARGE_INT)) return 0;
+    x = x0;
+    y = y0;
+    if (!(-1000 < y && y < 10000)) return 0;
+    int tau = 0;
     while (x < 0) {
+    tau += 1;
 	x = x + y;
 	y++;
     }

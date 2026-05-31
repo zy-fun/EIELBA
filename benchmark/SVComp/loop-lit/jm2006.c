@@ -5,18 +5,20 @@
 #include "assert.h"
 
 int main() {
-    int i, j;
-    i = __VERIFIER_nondet_int();
-    j = __VERIFIER_nondet_int();
-    if (!(i >= 0 && j >= 0)) return 0;
-    int x = i;
-    int y = j;
+    int x0, y0;
+    x0 = __VERIFIER_nondet_int();
+    y0 = __VERIFIER_nondet_int();
+    if (!(x0 >= 0 && y0 >= 0)) return 0;
+    int x = x0;
+    int y = y0;
+    int tau = 0;
     while(x != 0) {
+        tau += 1;
         x--;
         y--;
     }
 
-    if (i == j) {
+    if (x0 == y0) {
         __VERIFIER_assert(y == 0);
     }
     return 0;

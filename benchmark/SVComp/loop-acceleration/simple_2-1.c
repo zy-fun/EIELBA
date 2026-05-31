@@ -11,9 +11,12 @@ void __VERIFIER_assert(int cond) {
 }
 
 int main(void) {
-  unsigned int x = __VERIFIER_nondet_uint();
+  unsigned int x0;
+  unsigned int x = x0;
 
+  int tau = 0;
   while (x < 0x0fffffff) {
+    tau += 1;
     x++;
   }
 

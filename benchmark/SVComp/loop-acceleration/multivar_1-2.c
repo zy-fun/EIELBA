@@ -11,10 +11,14 @@ void __VERIFIER_assert(int cond) {
 }
 
 int main(void) {
-  unsigned int x = __VERIFIER_nondet_uint();
-  unsigned int y = x + 1;
+  unsigned int x0;
+  unsigned int y0 = x0 + 1;
+  unsigned int x = x0;
+  unsigned int y = y0;
 
+  int tau = 0;
   while (x < 1024) {
+    tau += 1;
     x++;
     y++;
   }

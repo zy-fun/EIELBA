@@ -18,10 +18,13 @@ postcondition=y>=0
 learners=conj
 */
 int main() {
-  int x = __VERIFIER_nondet_int();
-  int y = __VERIFIER_nondet_int();
+  int x0, y0;
+  int x = x0;
+  int y = y0;
   if (!(x == y && x >= 0)) return 0;
+  int tau = 0;
   while (x > 0) {
+    tau += 1;
     x--;
     y--;
   }

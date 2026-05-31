@@ -18,9 +18,12 @@ postcondition=x>=10
 learners= linear
 */
 int main() {
-  int x = __VERIFIER_nondet_int();
+  int x0;
+  int x = x0;
   if (!(x>=0)) return 0;
+  int tau = 0;
   while ((x>=0) && (x<10)) {
+    tau += 1;
     x=x+1;
   }
   __VERIFIER_assert(x>=10);

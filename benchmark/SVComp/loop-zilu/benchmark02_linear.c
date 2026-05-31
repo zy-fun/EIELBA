@@ -21,12 +21,16 @@ afterloop=
 learners= linear
 */
 int main() {
-  int n = __VERIFIER_nondet_int();
-  int i = __VERIFIER_nondet_int();
-  int l = __VERIFIER_nondet_int();
-  i = l;
+  int n0, i0, l0;
+  i0 = l0;
+  int n = n0;
+  int i = i0;
+  int l = l0;
+
   if (!(l>0)) return 0;
+  int tau = 0;
   while (i < n) {
+    tau += 1;
     i++;
   }
   __VERIFIER_assert(l>=1);

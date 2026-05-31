@@ -10,10 +10,14 @@ void __VERIFIER_assert(int cond) {
 }
 
 int main(void) {
-  unsigned int x = 0;
-  unsigned int y = 1;
+  unsigned int x0;
+  unsigned int y0;
+  unsigned int x = x0;
+  unsigned int y = y0;
 
+  int tau = 0;
   while (x < 6) {
+    tau += 1;
     x++;
     y *= 2;
   }

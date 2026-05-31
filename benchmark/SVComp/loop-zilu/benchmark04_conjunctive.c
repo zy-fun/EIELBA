@@ -21,12 +21,15 @@ afterloop=
 learners= conj
 */
 int main() {
-  int k = __VERIFIER_nondet_int();
-  int j = __VERIFIER_nondet_int();
-  int n = __VERIFIER_nondet_int();
+  int k0, j0, n0;
+  int k = k0;
+  int j = j0;
+  int n = n0;
   
   if (!(n>=1 && k>=n && j==0)) return 0;
+  int tau = 0;
   while (j<=n-1) {
+    tau += 1;
     j++;
     k--;
   }

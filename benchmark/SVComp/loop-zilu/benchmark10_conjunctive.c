@@ -21,11 +21,14 @@ afterloop=
 learners= conj
 */
 int main() {
-  int i = __VERIFIER_nondet_int();
-  int c = __VERIFIER_nondet_int();
+  int i0, c0;
+  int i = i0;
+  int c = c0;
   
   if (!(c==0 && i==0)) return 0;
+  int tau = 0;
   while (i<100) {
+    tau += 1;
     c=c+i;
     i=i+1;
     if (i<=0) break;

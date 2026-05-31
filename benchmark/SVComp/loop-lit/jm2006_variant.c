@@ -5,21 +5,21 @@
 #include "assert.h"
 
 int main() {
-    int i, j;
-    i = __VERIFIER_nondet_int();
-    j = __VERIFIER_nondet_int();
+    int x0, y0, z0;
 
-    if (!(i >= 0 && i <= LARGE_INT)) return 0;
-    if (!(j >= 0)) return 0;
-    int x = i;
-    int y = j;
-    int z = 0;
+    if (!(x0 >= 0 && x0 <= 10000)) return 0;
+    if (!(y0 >= 0)) return 0;
+    int x = x0;
+    int y = y0;
+    int z = z0;
+    int tau = 0;
     while(x != 0) {
+        tau += 1;
         x --;
         y -= 2;
         z ++;
     }
-    if (i == j) {
+    if (x0 == y0) {
         __VERIFIER_assert(y == -z);
     }
     return 0;

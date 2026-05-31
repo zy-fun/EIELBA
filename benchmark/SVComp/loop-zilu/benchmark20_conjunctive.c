@@ -21,12 +21,15 @@ afterloop=
 learners= conj
 */
 int main() {
-  int i = __VERIFIER_nondet_int();
-  int n = __VERIFIER_nondet_int();
-  int sum = __VERIFIER_nondet_int();
+  int i0, n0, sum0;
+  int i = i0;
+  int n = n0;
+  int sum = sum0;
   
   if (!(i==0 && n>=0 && n<=100 && sum==0)) return 0;
+  int tau = 0;
   while (i<n) {
+    tau += 1;
     sum = sum + i;
     i++;
   }

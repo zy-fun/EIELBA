@@ -18,10 +18,13 @@ postcondition=x==y
 learners=linear
 */
 int main() {
-  int x = __VERIFIER_nondet_int();
-  int y = __VERIFIER_nondet_int();
+  int x0, y0;
+  int x = x0;
+  int y = y0;
   if (!(x<y)) return 0;
+  int tau = 0;
   while (x<y) {
+    tau += 1;
     x=x+1;
   }
   __VERIFIER_assert(x==y);

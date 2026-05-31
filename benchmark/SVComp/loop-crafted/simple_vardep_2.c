@@ -14,11 +14,14 @@ void __VERIFIER_assert(int cond)
 
 int main()
 {
-  unsigned int i = 0;
-  unsigned int j = 0;
-  unsigned int k = 0;
+  unsigned int i0, j0, k0;
+  unsigned int i = i0;
+  unsigned int j = j0;
+  unsigned int k = k0;
 
+  int tau = 0;
   while (k < 0x0fffffff) {
+    tau += 1;
     i = i + 1;
     j = j + 2;
     k = k + 3;

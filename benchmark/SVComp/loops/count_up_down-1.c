@@ -12,13 +12,16 @@ unsigned int __VERIFIER_nondet_uint();
 
 int main()
 {
-  unsigned int n = __VERIFIER_nondet_uint();
-  unsigned int x=n, y=0;
+  unsigned int x0, y0;
+  unsigned int x = x0;
+  unsigned int y = y0;
+  int tau = 0;
   while(x>0)
   {
+    tau += 1;
     x--;
     y++;
   }
-  __VERIFIER_assert(y==n);
+  __VERIFIER_assert(y==x0);
 }
 

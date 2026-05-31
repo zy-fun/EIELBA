@@ -10,10 +10,13 @@ void __VERIFIER_assert(int cond) {
 }
 
 int main() {
-  int x = __VERIFIER_nondet_int();
-  int y = __VERIFIER_nondet_int();
+  int x0, y0;
+  int x = x0;
+  int y = y0;
   if (!(x < 100 && y < 100)) return 0;
+  int tau = 0;
   while (x < 100 && y < 100) {
+    tau += 1;
     x=x+1;
     y=y+1;
   }

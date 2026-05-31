@@ -18,11 +18,14 @@ postcondition= (i == k) && (k == n)
 learners= conj
 */
 int main() {
-  int i = __VERIFIER_nondet_int();
-  int k = __VERIFIER_nondet_int();
-  int n = __VERIFIER_nondet_int();
+  int i0, k0, n0;
+  int i = i0;
+  int k = k0;
+  int n = n0;
   if (!((i==0) && (k==0) && (n>0))) return 0;
+  int tau = 0;
   while (i < n) {
+    tau += 1;
     i++;k++;
   }
   __VERIFIER_assert((i == k) && (k == n));
